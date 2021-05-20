@@ -67,8 +67,8 @@ def sendemail(to,content):
    server=smtplib.SMTP('smtp.gmail.com',587)
    server.ehlo()
    server.starttls()
-   server.login('kapoor.anantdev@gmail.com','75Lukerganj.')
-   server.sendmail('kapoor.anantdev@gmail.com',to,content)
+   server.login('email@gmail.com','password')
+   server.sendmail('email@gmail.com',to,content)
    server.close()
 
 def CPU():
